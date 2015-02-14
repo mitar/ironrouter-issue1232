@@ -1,0 +1,9 @@
+<head>
+  <title>iron-controller</title>
+</head>
+
+<template name="hello">
+  <p>Hello, id={{id}}</p>
+  <p><a href="{{pathFor route='hello' id='123'}}">Click this link</a>, and above id should change to 123, but it does not. It does if you open {{pathFor route='hello' id='123'}} directly in the browser, not through the link.</p>
+  <p><a href="/">Back to the root page</a>.</p>
+</template>
